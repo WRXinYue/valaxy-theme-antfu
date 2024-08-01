@@ -2,7 +2,7 @@
 defineProps<{ projects: Record<string, any[]> }>()
 
 function slug(name: string) {
-  return name.toLowerCase().replace(/[\s\\\/]+/g, '-')
+  return name.toLowerCase().replace(/[\s\\/]+/g, '-')
 }
 </script>
 
@@ -12,28 +12,28 @@ function slug(name: string) {
       v-for="key, cidx in Object.keys(projects)" :key="key" slide-enter
       :style="{ '--enter-stage': cidx + 1 }"
     >
-    <div
+      <div
         :id="slug(key)"
-        select-none relative h20 pointer-events-none slide-enter
+        slide-enter select-none relative h20 pointer-events-none
         :style="{
           '--enter-stage': cidx - 2,
           '--enter-step': '60ms',
         }"
       >
-        <span text-5em color-transparent absolute left--1rem top-0rem font-bold leading-1em text-stroke-1.5 text-stroke-hex-aaa op35 dark:op20>{{ key }}</span>
+        <span color-transparent absolute font-bold text-stroke-hex-aaa text-5em left--1rem top-0rem leading-1em text-stroke-1.5 op35 dark:op20>{{ key }}</span>
       </div>
       <!-- <h4 :id="slug(key)" class="mt-15 mb-2 font-bold text-center op75">
         {{ key }}
       </h4> -->
       <div
-        class="project-grid py-2 max-w-500 w-max mx-auto"
+        class="mx-auto project-grid py-2 max-w-500 w-max"
         grid="~ cols-1 md:cols-2 gap-4 lg:cols-3"
         :class="projects[key].length === 1 ? 'flex' : projects[key].length > 2 ? 'lg:grid-cols-3' : ''"
       >
         <a
           v-for="item, idx in projects[key]"
           :key="idx"
-          class="item relative flex items-center"
+          class="relative flex item items-center"
           :href="item.link"
           target="_blank"
           :class="!item.link ? 'opacity-0 pointer-events-none h-0 -mt-8 -mb-4' : ''"
@@ -48,16 +48,16 @@ function slug(name: string) {
             <Vitest v-else-if="item.icon === 'vitest'" class="text-4xl opacity-50" />
             <Elk v-else-if="item.icon === 'elk'" class="text-4xl opacity-50" />
             <AnthonyFu v-else-if="item.icon === 'af'" class="text-4xl opacity-50" />
-            <div v-else class="text-3xl opacity-50" :class="item.icon || 'i-carbon-unknown'" />
+            <div v-else class="opacity-50 text-3xl" :class="item.icon || 'i-carbon-unknown'" />
           </div>
           <div class="flex-auto">
             <div class="text-normal">{{ item.name }}</div>
-            <div class="desc text-sm opacity-50 font-normal" v-html="item.desc" />
+            <div class="text-sm opacity-50 font-normal desc" v-html="item.desc" />
           </div>
         </a>
       </div>
     </div>
-    <div class="prose pb5 mx-auto mt10 text-center">
+    <div class="mx-auto prose text-center pb5 mt10">
       <div block mt-5>
         <a href="https://antfu.me/stars-rank" target="_blank" op50>All projects sort by Stars</a>
       </div>

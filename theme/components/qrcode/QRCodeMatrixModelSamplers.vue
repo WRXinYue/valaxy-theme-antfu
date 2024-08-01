@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
 const x = ref(0)
 const y = ref(0)
 
@@ -35,7 +37,7 @@ const samplers = [
 </script>
 
 <template>
-  <div border="~ base rounded-lg" flex="~ col md:row" w-100 max-w-full md:max-w-none md:w-auto mxa my2 of-hidden md:mx--5>
+  <div border="~ base rounded-lg" flex="~ col md:row" w-100 max-w-full my2 of-hidden md:max-w-none md:w-auto mxa md:mx--5>
     <ImageMatrix
       v-model:x="x"
       v-model:y="y"

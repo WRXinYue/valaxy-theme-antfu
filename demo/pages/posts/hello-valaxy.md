@@ -8,6 +8,7 @@ tags:
   - 笔记
 duration: 2min
 type: blog
+lang: zh
 ---
 
 ## Hello, Valaxy!

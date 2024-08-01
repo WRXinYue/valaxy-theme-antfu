@@ -12,7 +12,7 @@ const { t } = useI18n()
     <main class="container">
       <section class="about">
         <ThemeSectionTitle text="abo" hl-text="ut" />
-        <p class="text-xl text-center theme-text about-me">
+        <p class="text-center text-xl theme-text about-me">
           {{ t('home.about') }}
         </p>
       </section>

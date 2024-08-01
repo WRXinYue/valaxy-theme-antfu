@@ -141,7 +141,7 @@ const mask = computed(() => 'radial-gradient(circle, transparent, black);')
 
 <template>
   <div
-    class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden"
+    class="fixed bottom-0 print:hidden pointer-events-none top-0 left-0 right-0"
     style="z-index: 1"
     :style="`mask-image: ${mask};--webkit-mask-image: ${mask};`"
   >

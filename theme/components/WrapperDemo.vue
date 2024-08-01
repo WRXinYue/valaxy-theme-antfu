@@ -21,8 +21,8 @@ const { link, video, date } = defineProps({
 <template>
   <div>
     <a
-      border="~ base rounded-lg" block of-hidden class="group !duration-500 !transition-all" hover="scale-101 shadow-xl z-10"
-      bg-base relative :href="link" target="_blank"
+      border="~ base rounded-lg" class="group !duration-500 !transition-all" hover="scale-101 shadow-xl z-10"
+      block relative of-hidden bg-base :href="link" target="_blank"
     >
       <video v-if="video" :src="video" w-full autoplay loop muted playsinline border="b base" />
 

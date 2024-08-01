@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed, reactive, ref } from 'vue'
+
 const props = defineProps<{
   title?: string
   src: string
@@ -50,7 +52,7 @@ const binding = reactive({
 </script>
 
 <template>
-  <div border="~ base rounded-lg" my2 of-hidden>
+  <div border="~ base rounded-lg" of-hidden my2>
     <div v-if="title" text-center op75 py2>
       {{ title }}
     </div>
@@ -67,7 +69,7 @@ const binding = reactive({
     />
     <slot name="pre" v-bind="binding" />
     <slot v-bind="binding">
-      <div grid="~ cols-[max-content_1fr_max-content] gap-x-3 gap-y-1 items-center" py3 px4>
+      <div grid="~ cols-[max-content_1fr_max-content] gap-x-3 gap-y-1 items-center" px4 py3>
         <template v-for="x, idx of fixedRowsBefore || []" :key="idx">
           <div font-mono text-sm op75 text-right>
             {{ x[0] }}

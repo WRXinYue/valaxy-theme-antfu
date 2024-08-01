@@ -17,7 +17,7 @@ const { y: scroll } = useWindowScroll()
 <template>
   <header class="header z-40">
     <RouterLink
-      class="absolute m-5 h-12 w-12 select-none outline-none xl:fixed"
+      class="absolute select-none m-5 h-12 w-12 outline-none xl:fixed"
       to="/"
       focusable="false"
     >
@@ -26,7 +26,7 @@ const { y: scroll } = useWindowScroll()
     <button
       title="Scroll to top"
 
-      fixed bottom-3 right-3 z-100 h-10 w-10 rounded-full transition duration-300 print:hidden hover-bg-hex-8883 hover:op100
+      fixed hover:op100 bottom-3 right-3 z-100 h-10 w-10 rounded-full transition duration-300 print:hidden hover-bg-hex-8883
       :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'"
       @click="toTop()"
     >
@@ -35,7 +35,7 @@ const { y: scroll } = useWindowScroll()
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
-        <AppLink :to="nav.link" :title="nav.title ?? nav.text" v-for="nav in themeConfig.nav" :key="nav.link">
+        <AppLink v-for="nav in themeConfig.nav" :key="nav.link" :to="nav.link" :title="nav.title ?? nav.text">
           <span class="lt-md:hidden">{{ nav.text }}</span>
           <div v-if="nav.icon" :class="[nav.icon, !nav.title && 'md:hidden']" />
         </AppLink>

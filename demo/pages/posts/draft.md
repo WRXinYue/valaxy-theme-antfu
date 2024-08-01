@@ -6,6 +6,7 @@ tags:
   - draft
 duration: 2min
 type: blog
+lang: en
 ---
 
 ::: zh-CN

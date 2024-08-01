@@ -7,9 +7,9 @@ defineProps<{
 </script>
 
 <template>
-  <div h-5px border="t base" relative>
+  <div border="t base" relative h-5px>
     <div
-      bg-yellow absolute top-0 bottom-0
+      absolute top-0 bottom-0 bg-yellow
       :style="{
         left: `${+start * 100}%`,
         right: `${(1 - end) * 100}%`,

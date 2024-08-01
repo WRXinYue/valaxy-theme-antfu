@@ -11,10 +11,10 @@ function copy() {
 </script>
 
 <template>
-  <div ref="el" class="gap-1 items-center">
+  <div ref="el" class="items-center gap-1">
     <slot />
     <button
-      title="Copy" inline ml2 op30 hover:op100 text-sm transition
+      title="Copy" ml2 hover:op100 text-sm transition op30 inline
       :class="copied ? 'i-carbon-checkmark text-green' : 'i-carbon-copy'" @click="copy()"
     />
   </div>

@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <dl class="pb-10 pt-6 xl:border-b xl:border-gray-200 xl:pt-11">
+  <dl class="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11">
     <dt class="sr-only">
       Authors
     </dt>
@@ -22,7 +22,7 @@ defineProps<{
             alt="author image"
             class="h-10 w-10 rounded-full"
           >
-          <dl class="whitespace-nowrap text-sm font-medium leading-5">
+          <dl class="text-sm font-medium leading-5 whitespace-nowrap">
             <dt class="sr-only">
               Name
             </dt>

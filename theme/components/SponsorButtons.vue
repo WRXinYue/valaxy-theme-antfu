@@ -14,24 +14,24 @@
     <a
       href="https://github.com/sponsors/antfu"
       target="_blank"
-      class="group inline-block btn-rose"
+      class="inline-block group btn-rose"
     >
       <div
-        i-ph-heart-duotone
+
         group-hover="i-ph-heart-fill?mask text-rose"
-        transition-all duration-200 ease-out
+        transition-all duration-200 ease-out i-ph-heart-duotone
       />
       Sponsor to support Anthony
     </a>
     <a
       href="https://afdian.com/a/antfu"
       target="_blank"
-      class="group btn-yellow inline-block"
+      class="group inline-block btn-yellow"
     >
       <div
-        i-ph-lightning-duotone
+
         group-hover="i-ph-lightning-fill?mask text-yellow"
-        transition-all duration-200 ease-out
+        transition-all duration-200 ease-out i-ph-lightning-duotone
       />
       在爱发电上支持我
     </a>

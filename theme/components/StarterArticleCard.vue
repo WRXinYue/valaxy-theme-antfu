@@ -11,14 +11,14 @@ defineProps<{
     <StarterDate :date="post.date" />
     <div class="xl:col-span-3 space-y-5">
       <div class="space-y-6">
-        <h2 class="text-2xl font-bold leading-8 tracking-tight">
+        <h2 class="font-bold tracking-tight text-2xl leading-8">
           <RouterLink class="st-text" :to="post.path || ''">
             {{ post.title }}
           </RouterLink>
         </h2>
         <div
           v-if="post.excerpt"
-          class="max-w-none text-gray-500 prose"
+          class="prose text-gray-500 max-w-none"
           v-html="post.excerpt"
         />
       </div>

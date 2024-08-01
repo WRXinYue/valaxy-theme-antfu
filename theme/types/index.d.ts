@@ -64,6 +64,11 @@ export interface ThemeConfig extends DefaultTheme.Config {
    * navbar
    */
   nav: NavItem[]
+
+  subNav: {
+    text?: string
+    link: string
+  }[]
 }
 
 export interface NavItem {

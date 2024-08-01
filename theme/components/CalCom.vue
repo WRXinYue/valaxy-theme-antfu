@@ -49,7 +49,7 @@ if (typeof window !== 'undefined') {
 </script>
 
 <template>
-  <button :data-cal-link="link" btn-gray text-sm>
+  <button :data-cal-link="link" text-sm btn-gray>
     <div i-ri-calendar-event-fill />
     {{ title }}
   </button>

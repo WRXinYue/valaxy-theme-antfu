@@ -33,6 +33,8 @@ export const defaultThemeConfig: ThemeConfig = {
   },
 
   nav: [],
+
+  subNav: [],
 }
 
 // write a vite plugin

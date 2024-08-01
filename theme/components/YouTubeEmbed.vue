@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <div>
     <iframe
-      class="aspect-16/9 w-full rounded-lg shadow"
+      class="w-full aspect-16/9 rounded-lg shadow"
       :class="noScale ? '' : 'lg:scale-120 lg:my-20'"
       :src="`https://www.youtube-nocookie.com/embed/${id}`"
       title="YouTube video player"

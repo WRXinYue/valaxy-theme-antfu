@@ -8,6 +8,7 @@ tags:
   - document
 duration: 2min
 type: docs
+lang: en
 ---
 
 [![npm](https://img.shields.io/npm/v/valaxy-theme-antfu?color=000)](https://www.npmjs.com/package/valaxy-theme-antfu)

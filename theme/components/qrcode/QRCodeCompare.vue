@@ -15,26 +15,25 @@ defineProps<{
     >
     <div
       class="group"
-      absolute left--20 h-30 top--5 right-95 z-10
+
       hover="right-0 h-40"
-      transition-all duration-300 ease-in-out
+      absolute transition-all duration-300 left--20 h-30 top--5 right-95 z-10 ease-in-out
     >
       <img
         :src="input"
         pos="absolute top-8 left--2"
         border="~ base"
-        rotate--8 rounded-lg shadow-lg important-w-25
-        transition-all duration-300 ease-in-out
-        important-m0
+
+        rounded-lg transition-all duration-300 ease-in-out important-m0 rotate--8 shadow-lg important-w-25
         group-hover="left-20 top-5 rotate-0 important-w-100 op50 shadow-none"
       >
     </div>
     <div
       v-if="input2"
       class="group"
-      absolute left--20 h-30 top-40 right-95 z-10
+
       hover="right-0 z-9 top-0 h-full"
-      transition-all duration-300 ease-in-out
+      absolute left--20 h-30 right-95 z-10 transition-all duration-300 ease-in-out top-40
     >
       <img
         :src="input2"

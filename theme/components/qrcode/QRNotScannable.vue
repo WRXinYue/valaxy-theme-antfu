@@ -4,7 +4,7 @@
       <button>Not scannable?</button>
     </div>
     <template #popper>
-      <div w-120 max-w-screen class="prose" p4>
+      <div class="prose" max-w-screen p4 w-120>
         <p>
           It might not work on all scanners.
         </p>

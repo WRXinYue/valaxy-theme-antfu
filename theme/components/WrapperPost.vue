@@ -86,7 +86,7 @@ onMounted(() => {
     <h1 class="mb-0 slide-enter-50">
       {{ frontmatter.display ?? frontmatter.title }}
     </h1>
-    <p v-if="frontmatter.date" class="opacity-50 !-mt-6 slide-enter-50">
+    <p v-if="frontmatter.date" class="opacity-50 slide-enter-50 !-mt-6">
       {{ formatDate(frontmatter.date, false) }} <span v-if="frontmatter.duration">· {{ frontmatter.duration }}</span>
     </p>
     <p v-if="frontmatter.place" class="mt--4!">
@@ -101,14 +101,14 @@ onMounted(() => {
     <p v-if="frontmatter.subtitle" class="opacity-50 !-mt-6 italic slide-enter">
       {{ frontmatter.subtitle }}
     </p>
-    <p v-if="frontmatter.draft" class="slide-enter" bg-orange-4:10 text-orange-4 border="l-3 orange-4" px4 py2>
+    <p v-if="frontmatter.draft" class="slide-enter" border="l-3 orange-4" py2 bg-orange-4:10 text-orange-4 px4>
       This is a draft post, the content may be incomplete. Please check back later.
     </p>
   </div>
   <article ref="content" :class="[frontmatter.tocAlwaysOn ? 'toc-always-on' : '', frontmatter.class]">
     <slot />
   </article>
-  <div v-if="route.path !== '/'" class="prose m-auto mt-8 mb-8 slide-enter animate-delay-500 print:hidden">
+  <div v-if="route.path !== '/'" class="prose m-auto mb-8 slide-enter print:hidden mt-8 animate-delay-500">
     <template v-if="frontmatter.duration">
       <span font-mono op50>> </span>
       <span op50>comment on </span>

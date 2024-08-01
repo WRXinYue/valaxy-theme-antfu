@@ -58,9 +58,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <MeterGroup class="h-auto w-full" :value="vitalsValue" label-position="start">
+  <MeterGroup class="w-full h-auto" :value="vitalsValue" label-position="start">
     <template #label="{ value }">
-      <div class="flex w-full justify-around text-sm gap-2">
+      <div class="flex w-full text-sm justify-around gap-2">
         <template v-for="(val, i) of value" :key="i">
           <span :style="{ color: val.color }"> {{ val.label }} ({{ val.value }}%)</span>
         </template>

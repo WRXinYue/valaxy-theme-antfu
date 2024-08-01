@@ -6,8 +6,6 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import MarkdownItGitHubAlerts from 'markdown-it-github-alerts'
 import Shiki from '@shikijs/markdown-it'
 import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
-// @ts-expect-error missing types
-import TOC from 'markdown-it-table-of-contents'
 
 /**
  * User Config
@@ -56,6 +54,25 @@ export default defineConfig<ThemeConfig>({
         title: 'RSS',
         link: '/feed.xml',
         icon: 'i-la-rss-square',
+      },
+    ],
+
+    subNav: [
+      {
+        text: 'Blog',
+        link: '/posts',
+      },
+      {
+        text: 'Talks',
+        link: '/talks',
+      },
+      {
+        text: 'Notes',
+        link: '/notes',
+      },
+      {
+        text: 'Documentation',
+        link: '/docs',
       },
     ],
 

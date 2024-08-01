@@ -23,7 +23,7 @@ function daysLeft(date: string) {
         <hr>
       </div>
       <h2 :id="getSlug(talk.title)" tabindex="-1" important-mb-0>
-        <span v-if="talk.series" mb1 text-lg font-400 italic op45>
+        <span v-if="talk.series" text-lg mb1 font-400 italic op45>
           {{ talk.series }}
           <br>
         </span>
@@ -47,7 +47,7 @@ function daysLeft(date: string) {
               </a>
               <span
                 v-if="p.lang === 'zh'"
-                ml2 flex-none align-top
+                flex-none align-top ml2
                 class="my-auto rounded bg-zinc:15 px-1 py-0.5 text-xs text-zinc5"
               >中文</span>
               <div text-sm op50>
@@ -75,7 +75,7 @@ function daysLeft(date: string) {
                 v-if="isFuture(p.date)" :href="p.conferenceUrl" target="_blank"
                 rel="noopener noreferrer"
 
-                mr--2 rounded bg-gray:15 px2 font-bold font-serif op50 duration-500 important-border-0 hover:op100 important-transition-opacity
+                rounded op50 duration-500 important-border-0 hover:op100 important-transition-opacity font-bold mr--2 bg-gray:15 px2 font-serif
               >
                 <div i-ri-time-line />
                 in {{ daysLeft(p.date) }} days
