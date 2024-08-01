@@ -1,0 +1,23 @@
+@use 'sass:map';
+
+// common
+$common: () !default;
+$common: map.merge((), $common);
+
+// palette
+$light: (
+  'c-link': #000,
+
+  'c-text': #101820,
+) !default;
+$light: map.merge((), $light);
+
+$dark: (
+  'c-link': #fff,
+
+  'c-text': #f0f8ff,
+) !default;
+$dark: map.merge((), $dark);
+
+$z-index: () !default;
+$z-index: map.merge((), $z-index);
