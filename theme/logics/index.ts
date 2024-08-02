@@ -1,6 +1,6 @@
 import { useDark, useStorage } from '@vueuse/core'
 import { nextTick } from 'vue'
-import { format, isThisYear, parseISO } from 'date-fns'
+import dayjs from 'dayjs'
 
 export const isDark = useDark()
 export const englishOnly = useStorage('antfu-english-only', false)
@@ -53,15 +53,9 @@ export function toggleDark(event: MouseEvent) {
     })
 }
 
-export function formatDate(d: string | number | Date | undefined, onlyDate = true) {
-  if (d === undefined) {
-    throw new Error('Date parameter cannot be undefined')
-  }
-
-  const date = typeof d === 'string' ? parseISO(d) : (typeof d === 'number' ? new Date(d) : d)
-
-  if (onlyDate || isThisYear(date)) {
-    return format(date, 'MMM d')
-  }
-  return format(date, 'MMM d, yyyy')
+export function formatDate(d: string | Date, onlyDate = true) {
+  const date = dayjs(d)
+  if (onlyDate || date.year() === dayjs().year())
+    return date.format('MMM D')
+  return date.format('MMM D, YYYY')
 }

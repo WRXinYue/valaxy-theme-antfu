@@ -5,7 +5,7 @@ display: ''
 
 # Giving Talks
 
-Hey! My name is [Anthony Fu](/). I am a fanatical open sourceror living in Paris. I am focusing on many areas in frontend like Vite, Vue, Nuxt, DX, CSS, etc.
+Hey! My name is [Anthony Fu](https://antfu.me). I am a fanatical open sourceror living in Paris. I am focusing on many areas in frontend like Vite, Vue, Nuxt, DX, CSS, etc.
 
 [Here are the talks I have given](/talks).
 

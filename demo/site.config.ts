@@ -3,7 +3,7 @@ import { defineSiteConfig } from 'valaxy'
 export default defineSiteConfig({
   lang: 'zh-CN',
   title: 'Valaxy Theme Starter',
-  url: 'https://starter.valaxy.site/',
+  url: 'https://antfu.wrxinyue.org/',
   author: {
     avatar: 'https://www.yunyoujun.cn/images/avatar.jpg',
     name: 'WRXinYue',

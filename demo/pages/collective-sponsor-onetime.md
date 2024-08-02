@@ -26,7 +26,7 @@ I'd like to represent our ecosystem to say **THANK YOU** for your open source wo
 
 To show our appreciation,<br>**we'd like to offer you a one-time sponsorship of <span>${{route.query.amount}}</span> from our [Open Collective](https://opencollective.com/antfu)**.
 
-You can learn more about the context in this post: [Initiative on Sponsorship Forwarding](/posts/sponsorship-forwarding).
+You can learn more about the context in this post: [Initiative on Sponsorship Forwarding](https://antfu.me/posts/sponsorship-forwarding).
 
 ---
 

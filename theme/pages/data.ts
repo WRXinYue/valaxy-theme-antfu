@@ -2,7 +2,10 @@ import { usePageList } from 'valaxy'
 import { computed } from 'vue'
 
 const pageList = usePageList()
-// const video = import.meta.glob(`/pages/demos/*.mp4`, { eager: true, query: '?url', import: 'default' })
+const video = import.meta.glob(`@valaxy-blog/pages/demos/*.mp4`, { eager: true, query: '?url', import: 'default' })
+
+// HACK: There should be a better way to do this, or it should be encapsulated...
+const baseUrl = Object.keys(video)[0].match(/^.*(?=\/demos)/)![0]
 
 const posts = computed(() => pageList.value.filter(i =>
   i.path?.startsWith('/demos')
@@ -12,16 +15,14 @@ const posts = computed(() => pageList.value.filter(i =>
   && (!i.hide || i.hide === 'index'),
 ))
 
-export const demoItems = await Promise.all(
-  posts.value.map(async post => ({
-    title: post.title,
-    link: post.link,
-    date: post.path,
-    excerpt: post.excerpt,
-    src: (await import(/* @vite-ignore */ `${__cwd__}/pages/${post.path}.mp4?url`)).default,
-  })),
-).then(items =>
-  items
-    .filter(item => item.date !== 'index')
-    .sort((a, b) => b.date!.localeCompare(a.date!)),
-)
+export const demoItems = posts.value.map(post => ({
+  title: post.title,
+  link: post.link,
+  date: post.path,
+  excerpt: post.excerpt,
+  // https://github.com/vitejs/vite/issues/14102
+  // src: (await import(/* @vite-ignore */ `/pages${post.path}.mp4?url`)).default as unknown,
+  src: video[`${baseUrl}${post.path}.mp4`] as string,
+}))
+  .filter(item => item.date !== 'index')
+  .sort((a, b) => b.date!.localeCompare(a.date!))

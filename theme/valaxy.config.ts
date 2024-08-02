@@ -14,6 +14,7 @@ import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
 import type { ThemeConfig } from './types'
 import { defaultThemeConfig, generateSafelist, themePlugin } from './node'
 import { slugify } from './scripts/slugify'
+import ValaxyBlogPlugin from './vite-plugin/valaxy-blog-plugin'
 
 const promises: Promise<any>[] = []
 
@@ -46,6 +47,8 @@ export default defineTheme<ThemeConfig>((options) => {
             await Promise.all(promises)
           },
         },
+
+        ValaxyBlogPlugin(),
       ],
     },
     markdown: {
