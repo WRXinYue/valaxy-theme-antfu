@@ -17,12 +17,13 @@ const posts = computed(() => pageList.value.filter(i =>
 
 export const demoItems = posts.value.map(post => ({
   title: post.title,
-  link: post.link,
-  date: post.path,
+  link: post.link ?? post.path,
+  date: post.date,
   excerpt: post.excerpt,
   // https://github.com/vitejs/vite/issues/14102
   // src: (await import(/* @vite-ignore */ `/pages${post.path}.mp4?url`)).default as unknown,
   src: video[`${baseUrl}${post.path}.mp4`] as string,
 }))
   .filter(item => item.date !== 'index')
-  .sort((a, b) => b.date!.localeCompare(a.date!))
+  // .sort((a, b) => b.date!.localeCompare(a.date!))
+  .sort((a, b) => new Date(b.date!).getTime() - new Date(a.date!).getTime())

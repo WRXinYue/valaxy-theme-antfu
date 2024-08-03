@@ -58,8 +58,14 @@ export function toggleDark(event: MouseEvent) {
 export function formatDate(d: string | number | Date, onlyDate = true) {
   const { locale } = useI18n()
 
-  const date = typeof d === 'string' || typeof d === 'number' ? parseISO(String(d)) : d
-  if (onlyDate || isThisYear(date))
-    return format(date, 'MMM d', { locale: (locale.value === 'en' ? enUS : zhCN) })
-  return format(date, 'MMM d, yyyy', { locale: locale.value === 'en' ? enUS : zhCN })
+  try {
+    const date = typeof d === 'string' || typeof d === 'number' ? parseISO(String(d)) : d
+    if (onlyDate || isThisYear(date))
+      return format(date, 'MMM d', { locale: (locale.value === 'en' ? enUS : zhCN) })
+    return format(date, 'MMM d, yyyy', { locale: locale.value === 'en' ? enUS : zhCN })
+  }
+  catch (error) {
+    console.error('Date:', d)
+    console.error('Error formatting date:', error)
+  }
 }
