@@ -1,6 +1,8 @@
 import { useDark, useStorage } from '@vueuse/core'
 import { nextTick } from 'vue'
-import dayjs from 'dayjs'
+import { format, isThisYear, parseISO } from 'date-fns'
+import { useI18n } from 'vue-i18n'
+import { enUS, zhCN } from 'date-fns/locale'
 
 export const isDark = useDark()
 export const englishOnly = useStorage('antfu-english-only', false)
@@ -53,9 +55,11 @@ export function toggleDark(event: MouseEvent) {
     })
 }
 
-export function formatDate(d: string | Date, onlyDate = true) {
-  const date = dayjs(d)
-  if (onlyDate || date.year() === dayjs().year())
-    return date.format('MMM D')
-  return date.format('MMM D, YYYY')
+export function formatDate(d: string | number | Date, onlyDate = true) {
+  const { locale } = useI18n()
+
+  const date = typeof d === 'string' || typeof d === 'number' ? parseISO(String(d)) : d
+  if (onlyDate || isThisYear(date))
+    return format(date, 'MMM d', { locale: (locale.value === 'en' ? enUS : zhCN) })
+  return format(date, 'MMM d, yyyy', { locale: locale.value === 'en' ? enUS : zhCN })
 }

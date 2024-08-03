@@ -114,7 +114,7 @@ function getGroupName(p: Post) {
               <span v-if="route.radio" align-middle op50 flex-none i-ri:radio-line title="Provided in radio" />
 
               <span text-sm op50 ws-nowrap>
-                {{ formatDate(route.date, true) }}
+                {{ formatDate(route.date ?? new Date, true) }}
               </span>
               <span v-if="route.duration" text-sm ws-nowrap op40>· {{ route.duration }}</span>
               <span v-if="route.platform" text-sm op40 ws-nowrap>· {{ route.platform }}</span>
