@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Valaxy Theme Starter</title>
+        <link>https://antfu.wrxinyue.org/</link>
+        <description>Valaxy Theme Starter Preview.</description>
+        <lastBuildDate>Tue, 06 Aug 2024 04:50:04 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Valaxy Theme Starter</title>
+            <url>https://www.yunyoujun.cn/images/avatar.jpg</url>
+            <link>https://antfu.wrxinyue.org/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2024 © WRXinYue</copyright>
+        <atom:link href="https://antfu.wrxinyue.org/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Hello, Valaxy!]]></title>
+            <link>https://antfu.wrxinyue.org/posts/hello-valaxy</link>
+            <guid>https://antfu.wrxinyue.org/posts/hello-valaxy</guid>
+            <pubDate>Wed, 23 Mar 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Hello, Valaxy!</h2>
+<p>English</p>
+<p><strong>English Bold</strong></p>
+<pre><code class="language-ts">import type { ThemeConfig } from 'valaxy-theme-</code></pre>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/hello-valaxy" target="_blank">https://antfu.wrxinyue.org/posts/hello-valaxy</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (WRXinYue)</author>
+        </item>
+        <item>
+            <title><![CDATA[Install]]></title>
+            <link>https://antfu.wrxinyue.org/posts/install</link>
+            <guid>https://antfu.wrxinyue.org/posts/install</guid>
+            <pubDate>Wed, 23 Mar 2022 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>[<img src="https://img.shields.io/npm/v/valaxy-theme-antfu?color=000" alt="npm">](<a href="https://www.npmjs.com/package/v">https://www.npmjs.com/package/v</a></p>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/install" target="_blank">https://antfu.wrxinyue.org/posts/install</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (WRXinYue)</author>
+        </item>
+    </channel>
+</rss>

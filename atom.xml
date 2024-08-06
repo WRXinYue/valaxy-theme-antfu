@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://antfu.wrxinyue.org/</id>
+    <title>Valaxy Theme Starter</title>
+    <updated>2024-08-06T04:50:04.893Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>WRXinYue</name>
+        <email>i@valaxy.site</email>
+        <uri>https://valaxy.site</uri>
+    </author>
+    <link rel="alternate" href="https://antfu.wrxinyue.org/"/>
+    <link rel="self" href="https://antfu.wrxinyue.org/atom.xml"/>
+    <subtitle>Valaxy Theme Starter Preview.</subtitle>
+    <logo>https://www.yunyoujun.cn/images/avatar.jpg</logo>
+    <icon>https://antfu.wrxinyue.org/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2024 © WRXinYue</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
+        <id>https://antfu.wrxinyue.org/posts/hello-valaxy</id>
+        <link href="https://antfu.wrxinyue.org/posts/hello-valaxy"/>
+        <updated>2022-03-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>Hello, Valaxy!</h2>
+<p>English</p>
+<p><strong>English Bold</strong></p>
+<pre><code class="language-ts">import type { ThemeConfig } from 'valaxy-theme-</code></pre>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/hello-valaxy" target="_blank">https://antfu.wrxinyue.org/posts/hello-valaxy</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>WRXinYue</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-03-23T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Install]]></title>
+        <id>https://antfu.wrxinyue.org/posts/install</id>
+        <link href="https://antfu.wrxinyue.org/posts/install"/>
+        <updated>2022-03-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>[<img src="https://img.shields.io/npm/v/valaxy-theme-antfu?color=000" alt="npm">](<a href="https://www.npmjs.com/package/v">https://www.npmjs.com/package/v</a></p>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/install" target="_blank">https://antfu.wrxinyue.org/posts/install</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>WRXinYue</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-03-23T00:00:00.000Z</published>
+    </entry>
+</feed>
