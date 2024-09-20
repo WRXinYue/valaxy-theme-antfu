@@ -12,9 +12,8 @@ import Shiki from '@shikijs/markdown-it'
 import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
 // import TOC from 'markdown-it-table-of-contents'
 import type { ThemeConfig } from './types'
-import { defaultThemeConfig, generateSafelist, themePlugin } from './node'
+import { ValaxyBlogPlugin, defaultThemeConfig, generateSafelist, themePlugin } from './node'
 import { slugify } from './scripts/slugify'
-import ValaxyBlogPlugin from './vite-plugin/valaxy-blog-plugin'
 
 const promises: Promise<any>[] = []
 
@@ -50,6 +49,11 @@ export default defineTheme<ThemeConfig>((options) => {
 
         ValaxyBlogPlugin(),
       ],
+      resolve: {
+        alias: {
+
+        },
+      },
     },
     markdown: {
       // Waiting for Valaxy support

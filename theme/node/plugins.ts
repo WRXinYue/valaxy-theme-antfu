@@ -1,6 +1,32 @@
 import { promises as fs } from 'node:fs'
 import path, { basename } from 'node:path'
 import type { Plugin } from 'vite'
+import type { ResolvedValaxyOptions } from 'valaxy'
+import type { ThemeConfig } from '../types'
+
+// write a vite plugin
+// https://vitejs.dev/guide/api-plugin.html
+export function themePlugin(options: ResolvedValaxyOptions<ThemeConfig>): Plugin {
+  const themeConfig = options.config.themeConfig || {}
+
+  return {
+    name: 'valaxy-theme-starter',
+
+    config() {
+      return {
+        css: {
+          preprocessorOptions: {
+            scss: {
+              additionalData: `$c-primary: ${themeConfig.colors?.primary || '#0078E7'} !default;`,
+            },
+          },
+        },
+
+        valaxy: {},
+      }
+    },
+  }
+}
 
 /**
  * @see https://github.com/vitejs/vite/issues/14102
@@ -10,7 +36,7 @@ import type { Plugin } from 'vite'
  * to access user files in themes.
  * Reference https://github.com/vitejs/vite/issues/2351
  */
-function ValaxyBlogPlugin({ prefix = '@valaxy-blog/' }: { prefix?: string } = {}): Plugin {
+export function ValaxyBlogPlugin({ prefix = '@valaxy-blog/' }: { prefix?: string } = {}): Plugin {
   const sourceFromId = (id: string) => id.slice(prefix.length)
   return {
     name: `ValaxyBlogPlugin`,
@@ -18,7 +44,7 @@ function ValaxyBlogPlugin({ prefix = '@valaxy-blog/' }: { prefix?: string } = {}
 
     async resolveId(id: string): Promise<any> {
       if (id.startsWith(prefix)) {
-        return path.resolve(sourceFromId(id))
+        return path.resolve(`./${sourceFromId(id)}`)
       }
     },
 
@@ -41,5 +67,3 @@ function ValaxyBlogPlugin({ prefix = '@valaxy-blog/' }: { prefix?: string } = {}
     },
   }
 }
-
-export default ValaxyBlogPlugin
