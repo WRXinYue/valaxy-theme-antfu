@@ -11,7 +11,7 @@
   "dependencies": {
     "@iconify/json": "^2.2.232",
     "markdown-it-magic-link": "^0.1.4",
-    "valaxy": "^0.19.5",
+    "valaxy": "^0.19.10",
     "valaxy-theme-antfu": "workspace:*"
   },
   "devDependencies": {
