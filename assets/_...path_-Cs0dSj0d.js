@@ -1,0 +1,1 @@
+import{f as a,g as n,h as s,i as c,a as r,o as p}from"./app-HJ-mllJX.js";const u=a({__name:"[...path]",setup(f){const o=c(),e=r();return n(()=>{e.path!=="/"&&e.path.endsWith("/")&&o.replace(e.path.slice(0,-1))}),(i,_)=>(p(),s("div"))}}),t={};typeof t=="function"&&t(u);export{u as default};
