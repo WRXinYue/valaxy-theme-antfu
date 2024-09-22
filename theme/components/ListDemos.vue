@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import { computed } from 'vue'
-import { demoItems } from '../pages/data'
+import { useDemoItems } from '../composables'
+
+const demoItems = useDemoItems()
 
 const breakpoints = useBreakpoints(breakpointsTailwind)
 
