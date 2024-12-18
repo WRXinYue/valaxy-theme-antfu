@@ -40,10 +40,10 @@ onKeyStroke('Escape', (e) => {
 </script>
 
 <template>
-  <NavBar />
+  <AntfuNavBar />
   <main class="py-10 of-x-hidden px-7">
     <RouterView />
-    <Footer :key="route.path" />
+    <AntfuFooter :key="route.path" />
   </main>
   <Transition name="fade">
     <div v-if="imageModel" fixed bottom-0 left-0 right-0 top-0 z-500 backdrop-blur-7 @click="imageModel = undefined">

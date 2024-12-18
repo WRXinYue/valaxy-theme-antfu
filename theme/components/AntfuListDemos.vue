@@ -27,7 +27,7 @@ const parts = computed(() => {
 <template>
   <div grid="~ cols-1 lg:cols-2 xl:cols-3 gap-4">
     <div v-for="items, idx of parts" :key="idx" flex="~ col gap-4">
-      <WrapperDemo
+      <AntfuWrapperDemo
         v-for="{ excerpt, date, src, link } of items" :key="date" :link="link" :date="date" :video="src"
         :excerpt="excerpt" class="slide-enter" :style="{ '--enter-stage': idx + 1 }"
       />

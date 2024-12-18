@@ -1,8 +1,8 @@
 ---
-title: Anthony Fu
-description: Anthony Fu's Portfolio
-image: https://antfu.me/og.png
-art: random
+title: About Anthony Fu
+duration: 2min
+type: blog
+lang: en
 ---
 
 Hey, I am Anthony Fu, a fanatical open sourceror.

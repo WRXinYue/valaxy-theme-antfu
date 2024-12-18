@@ -492,4 +492,4 @@ projects:
 
 <!-- @layout-full-width -->
 
-<ListProjects :projects="frontmatter.projects" />
+<AntfuListProjects :projects="frontmatter.projects" />

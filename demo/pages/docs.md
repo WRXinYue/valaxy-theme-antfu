@@ -4,6 +4,6 @@ art: plum
 display: ''
 ---
 
-<SubNav />
+<AntfuSubNav />
 
-<ListPosts only-date type="docs" />
+<AntfuListPosts only-date type="docs" />

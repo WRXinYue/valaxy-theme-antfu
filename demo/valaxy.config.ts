@@ -17,6 +17,10 @@ export default defineConfig<ThemeConfig>({
   themeConfig: {
     nav: [
       {
+        text: 'Home',
+        link: '/',
+      },
+      {
         text: 'Blog',
         link: '/posts',
         icon: 'i-ri-article-line',
@@ -65,10 +69,6 @@ export default defineConfig<ThemeConfig>({
       {
         text: 'Talks',
         link: '/talks',
-      },
-      {
-        text: 'Notes',
-        link: '/notes',
       },
       {
         text: 'Documentation',

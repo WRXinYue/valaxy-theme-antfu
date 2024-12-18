@@ -7,11 +7,13 @@ defineProps<{
 
 <template>
   <span ws-nowrap>
-    <CarbonLogoGithub class="inline-block" />
+    <slot name="icon">
+      <span class="inline inline-block" i-ri:github-fill />
+    </slot>
     <a
       class="opacity-70 ml-1 font-mono"
       :href="`https://github.com/${repo}`"
       target="_blank"
-    >{{ name || (repo.startsWith('WRXinYue/') ? repo.slice(6) : repo) }}</a>
+    >{{ name || (repo.includes('/') ? repo.split('/').slice(1).join('/') : repo) }}</a>
   </span>
 </template>

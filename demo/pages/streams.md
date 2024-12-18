@@ -126,4 +126,4 @@ items:
 
 <StreamAnnouncement />
 
-<ListPosts :posts="frontmatter.items.reverse()" />
+<AntfuListPosts :posts="frontmatter.items.reverse()" />

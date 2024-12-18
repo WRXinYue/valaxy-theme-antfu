@@ -9,12 +9,12 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.232",
+    "@iconify/json": "^2.2.285",
     "markdown-it-magic-link": "^0.1.4",
-    "valaxy": "^0.19.11",
+    "valaxy": "^0.22.2",
     "valaxy-theme-antfu": "workspace:*"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.9"
   }
 }
