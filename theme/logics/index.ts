@@ -1,8 +1,8 @@
 import { useDark, useStorage } from '@vueuse/core'
-import { nextTick } from 'vue'
 import { format, isThisYear, parseISO } from 'date-fns'
-import { useI18n } from 'vue-i18n'
 import { enUS, zhCN } from 'date-fns/locale'
+import { nextTick } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 export const isDark = useDark()
 export const englishOnly = useStorage('antfu-english-only', false)
