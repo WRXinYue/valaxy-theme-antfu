@@ -14,7 +14,7 @@ Maintaining {Shiki} {Twoslash} {ESLint Stylistic}
 
 Dreaming up ideas and making them come true is where my passion lies. You can find my [full projects list here](/projects). I also do some generative-art, compform, interactivity experiments on [100.antfu.me](https://100.antfu.me/).
 
-I give [talks](/talks) and write [blog posts](/posts) about open source, coding, tutorials, etc. Occasionally, I also do some coding live streams on [YouTube](https://www.youtube.com/anthonyfu7) and [哔哩哔哩](https://space.bilibili.com/668380).
+<!-- I give [talks](/talks) and write [blog posts](/posts) about open source, coding, tutorials, etc. Occasionally, I also do some coding live streams on [YouTube](https://www.youtube.com/anthonyfu7) and [哔哩哔哩](https://space.bilibili.com/668380). -->
 
 Outside of programming, I enjoy doing photography and traveling. Some of my photos can be found on [Instagram](https://www.instagram.com/antfu7). Right now I live in Paris. If you are around, feel free to reach me out, we could have some coffee or work together.
 

@@ -10,7 +10,6 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import Icons from 'unplugin-icons/vite'
 import { defineTheme } from 'valaxy'
 import Inspect from 'vite-plugin-inspect'
-import Exclude from 'vite-plugin-optimize-exclude'
 import SVG from 'vite-svg-loader'
 import { defaultThemeConfig, generateSafelist, themePlugin, ValaxyBlogPlugin } from './node'
 import { slugify } from './scripts/slugify'
@@ -37,8 +36,6 @@ export default defineTheme<ThemeConfig>((options) => {
           svgo: false,
           defaultImport: 'url',
         }),
-
-        Exclude(),
 
         {
           name: 'await',
