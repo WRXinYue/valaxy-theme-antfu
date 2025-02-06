@@ -1,8 +1,8 @@
+import type { ResolvedValaxyOptions } from 'valaxy'
+import type { Plugin } from 'vite'
+import type { ThemeConfig } from '../types'
 import { promises as fs } from 'node:fs'
 import path, { basename } from 'node:path'
-import type { Plugin } from 'vite'
-import type { ResolvedValaxyOptions } from 'valaxy'
-import type { ThemeConfig } from '../types'
 
 // write a vite plugin
 // https://vitejs.dev/guide/api-plugin.html

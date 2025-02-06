@@ -53,7 +53,7 @@ const binding = reactive({
 
 <template>
   <div border="~ base rounded-lg" of-hidden my2>
-    <div v-if="title" text-center op75 py2>
+    <div v-if="title" text-center py2 op75>
       {{ title }}
     </div>
     <ImageMatrix

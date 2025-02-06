@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
 import { onKeyStroke, useEventListener } from '@vueuse/core'
 import { ref } from 'vue'
+import { useRoute } from 'vue-router'
 
 const route = useRoute()
 

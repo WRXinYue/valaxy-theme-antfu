@@ -1,8 +1,8 @@
 <script setup lang="ts">
+import type { Post } from 'valaxy'
+import { usePostList } from 'valaxy'
 // import { useRouter } from 'vue-router'
 import { computed } from 'vue'
-import { usePostList } from 'valaxy'
-import type { Post } from 'valaxy'
 import { englishOnly, formatDate } from '../logics'
 
 const props = defineProps<{

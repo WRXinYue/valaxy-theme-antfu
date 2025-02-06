@@ -1,7 +1,7 @@
 <script setup lang='ts'>
+import { useEventListener } from '@vueuse/core'
 import { onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { useEventListener } from '@vueuse/core'
 import { formatDate } from '../logics'
 
 const { frontmatter } = defineProps({
@@ -98,7 +98,7 @@ onMounted(() => {
         {{ frontmatter.place }}
       </span>
     </p>
-    <p v-if="frontmatter.subtitle" class="opacity-50 !-mt-6 italic slide-enter">
+    <p v-if="frontmatter.subtitle" class="opacity-50 !-mt-6 slide-enter italic">
       {{ frontmatter.subtitle }}
     </p>
     <p v-if="frontmatter.draft" class="slide-enter" border="l-3 orange-4" py2 bg-orange-4:10 text-orange-4 px4>

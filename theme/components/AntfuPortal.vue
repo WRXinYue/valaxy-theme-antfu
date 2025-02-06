@@ -1,6 +1,6 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
 import { DomHandler } from 'primevue/utils'
+import { computed, onMounted, ref } from 'vue'
 
 const props = defineProps({
   appendTo: {

@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <span ws-nowrap>
     <slot name="icon">
-      <span class="inline inline-block" i-ri:github-fill />
+      <span class="inline-block inline" i-ri:github-fill />
     </slot>
     <a
       class="opacity-70 ml-1 font-mono"

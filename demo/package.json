@@ -9,7 +9,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.285",
+    "@iconify/json": "^2.2.303",
     "markdown-it-magic-link": "^0.1.4",
     "valaxy": "^0.22.7",
     "valaxy-theme-antfu": "workspace:*"

@@ -11,7 +11,7 @@ defineProps<{
     <img
       :src="output"
       border="~ base"
-      rounded-lg shadow absolute left-0 bottom-0 right-0 top-0 important-m0 z-1
+      absolute left-0 bottom-0 right-0 top-0 rounded-lg shadow important-m0 z-1
     >
     <div
       class="group"

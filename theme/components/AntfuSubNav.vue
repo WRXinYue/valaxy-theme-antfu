@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import { englishOnly } from '../logics'
 import { useThemeConfig } from '../composables'
+import { englishOnly } from '../logics'
 
 const inactiveStyle = 'opacity-20 hover:opacity-50'
 const activeStyle = 'opacity-100 underline'

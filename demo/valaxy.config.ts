@@ -1,11 +1,11 @@
-import { defineConfig } from 'valaxy'
 import type { ThemeConfig } from 'valaxy-theme-antfu'
-import MarkdownItMagicLink from 'markdown-it-magic-link'
-// @ts-expect-error missing types
-import LinkAttributes from 'markdown-it-link-attributes'
-import MarkdownItGitHubAlerts from 'markdown-it-github-alerts'
 import Shiki from '@shikijs/markdown-it'
 import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
+import MarkdownItGitHubAlerts from 'markdown-it-github-alerts'
+// @ts-expect-error missing types
+import LinkAttributes from 'markdown-it-link-attributes'
+import MarkdownItMagicLink from 'markdown-it-magic-link'
+import { defineConfig } from 'valaxy'
 
 /**
  * User Config
