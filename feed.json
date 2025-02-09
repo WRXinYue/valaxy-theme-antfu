@@ -1,0 +1,50 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Valaxy Theme Starter",
+    "home_page_url": "https://antfu.wrxinyue.org/",
+    "feed_url": "https://antfu.wrxinyue.org/feed.json",
+    "description": "Valaxy Theme Starter Preview.",
+    "icon": "https://www.yunyoujun.cn/images/avatar.jpg",
+    "author": {
+        "name": "WRXinYue",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<p>Hey, I am Anthony Fu, a fanatical open sourceror.</p>\n<p>Working at {NuxtLabs}<br><br>\nCreator of {Vitest} {S</p>\n<br/><p>访问 <a href=\"https://antfu.wrxinyue.org/posts/about-antfu\" target=\"_blank\">https://antfu.wrxinyue.org/posts/about-antfu</a> 阅读全文。</p>",
+            "url": "https://antfu.wrxinyue.org/posts/about-antfu",
+            "title": "About Anthony Fu",
+            "date_modified": "2025-02-09T18:02:46.808Z",
+            "date_published": "2025-02-09T18:02:46.808Z",
+            "author": {
+                "name": "WRXinYue",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>Hello, Valaxy!</h2>\n<p>English</p>\n<p><strong>English Bold</strong></p>\n<pre><code class=\"language-ts\">import type { ThemeConfig } from 'valaxy-theme-</code></pre>\n<br/><p>访问 <a href=\"https://antfu.wrxinyue.org/posts/hello-valaxy\" target=\"_blank\">https://antfu.wrxinyue.org/posts/hello-valaxy</a> 阅读全文。</p>",
+            "url": "https://antfu.wrxinyue.org/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2022-03-22T00:00:00.000Z",
+            "date_published": "2022-03-23T00:00:00.000Z",
+            "author": {
+                "name": "WRXinYue",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>[<img src=\"https://img.shields.io/npm/v/valaxy-theme-antfu?color=000\" alt=\"npm\">](<a href=\"https://www.npmjs.com/package/v\">https://www.npmjs.com/package/v</a></p>\n<br/><p>访问 <a href=\"https://antfu.wrxinyue.org/posts/install\" target=\"_blank\">https://antfu.wrxinyue.org/posts/install</a> 阅读全文。</p>",
+            "url": "https://antfu.wrxinyue.org/posts/install",
+            "title": "Install",
+            "date_modified": "2022-03-22T00:00:00.000Z",
+            "date_published": "2022-03-23T00:00:00.000Z",
+            "author": {
+                "name": "WRXinYue",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}
