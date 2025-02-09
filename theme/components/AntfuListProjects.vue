@@ -33,7 +33,7 @@ function slug(name: string) {
         <a
           v-for="item, idx in projects[key]"
           :key="idx"
-          class="relative flex item items-center"
+          class="relative flex item items-center color-inherit"
           :href="item.link"
           target="_blank"
           :class="!item.link ? 'opacity-0 pointer-events-none h-0 -mt-8 -mb-4' : ''"
@@ -57,13 +57,13 @@ function slug(name: string) {
         </a>
       </div>
     </div>
-    <div class="mx-auto prose text-center pb5 mt10">
+    <!-- <div class="mx-auto prose text-center pb5 mt10">
       <div block mt-5>
         <a href="https://antfu.me/stars-rank" target="_blank" op50>All projects sort by Stars</a>
       </div>
       <hr>
       <SponsorButtons />
-    </div>
+    </div>  -->
   </div>
   <div>
     <div class="table-of-contents">
