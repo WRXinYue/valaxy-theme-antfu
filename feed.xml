@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Valaxy Theme Starter</title>
+        <link>https://antfu.wrxinyue.org/</link>
+        <description>Valaxy Theme Starter Preview.</description>
+        <lastBuildDate>Sun, 16 Mar 2025 16:25:39 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Valaxy Theme Starter</title>
+            <url>https://www.yunyoujun.cn/images/avatar.jpg</url>
+            <link>https://antfu.wrxinyue.org/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2025 © WRXinYue</copyright>
+        <atom:link href="https://antfu.wrxinyue.org/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Layout Options]]></title>
+            <link>https://antfu.wrxinyue.org/posts/layout-options</link>
+            <guid>https://antfu.wrxinyue.org/posts/layout-options</guid>
+            <pubDate>Sun, 16 Mar 2025 16:24:32 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Layout Options{lang=&quot;en&quot;}</h1>
+<p>::: en<br>
+This guide explains the various layout options available in the</p>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/layout-options" target="_blank">https://antfu.wrxinyue.org/posts/layout-options</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (WRXinYue)</author>
+        </item>
+        <item>
+            <title><![CDATA[Markdown Features]]></title>
+            <link>https://antfu.wrxinyue.org/posts/markdown-features</link>
+            <guid>https://antfu.wrxinyue.org/posts/markdown-features</guid>
+            <pubDate>Sun, 16 Mar 2025 16:24:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p>[[toc]]</p>
+<h1>Markdown Features{lang=&quot;en&quot;}</h1>
+<p>::: en<br>
+This guide explains how to use various Markdown fea</p>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/markdown-features" target="_blank">https://antfu.wrxinyue.org/posts/markdown-features</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (WRXinYue)</author>
+        </item>
+        <item>
+            <title><![CDATA[Navigation Configuration]]></title>
+            <link>https://antfu.wrxinyue.org/posts/navigation</link>
+            <guid>https://antfu.wrxinyue.org/posts/navigation</guid>
+            <pubDate>Sun, 16 Mar 2025 16:24:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p>[[toc]]</p>
+<h1>Navigation Configuration{lang=&quot;en&quot;}</h1>
+<p>::: en<br>
+This guide explains how to configure the nav</p>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/navigation" target="_blank">https://antfu.wrxinyue.org/posts/navigation</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (WRXinYue)</author>
+        </item>
+        <item>
+            <title><![CDATA[Page Types]]></title>
+            <link>https://antfu.wrxinyue.org/posts/page-types</link>
+            <guid>https://antfu.wrxinyue.org/posts/page-types</guid>
+            <pubDate>Sun, 16 Mar 2025 16:24:32 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Page Types{lang=&quot;en&quot;}</h1>
+<p>::: en<br>
+This guide explains the different page types available in the `vala</p>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/page-types" target="_blank">https://antfu.wrxinyue.org/posts/page-types</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (WRXinYue)</author>
+        </item>
+        <item>
+            <title><![CDATA[Site Structure]]></title>
+            <link>https://antfu.wrxinyue.org/posts/site-structure</link>
+            <guid>https://antfu.wrxinyue.org/posts/site-structure</guid>
+            <pubDate>Sun, 16 Mar 2025 16:24:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p>[[toc]]</p>
+<h1>Site Structure{lang=&quot;en&quot;}</h1>
+<p>::: en<br>
+This guide explains how to set up a proper site struct</p>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/site-structure" target="_blank">https://antfu.wrxinyue.org/posts/site-structure</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (WRXinYue)</author>
+        </item>
+        <item>
+            <title><![CDATA[Theme Configuration]]></title>
+            <link>https://antfu.wrxinyue.org/posts/theme-config</link>
+            <guid>https://antfu.wrxinyue.org/posts/theme-config</guid>
+            <pubDate>Sun, 16 Mar 2025 16:24:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p>[[toc]]</p>
+<h1>Theme Configuration{lang=&quot;en&quot;}</h1>
+<p>::: en<br>
+This guide explains how to configure the `valaxy-</p>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/theme-config" target="_blank">https://antfu.wrxinyue.org/posts/theme-config</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (WRXinYue)</author>
+        </item>
+        <item>
+            <title><![CDATA[Admonitions]]></title>
+            <link>https://antfu.wrxinyue.org/posts/admonitions</link>
+            <guid>https://antfu.wrxinyue.org/posts/admonitions</guid>
+            <pubDate>Sun, 16 Mar 2025 16:24:32 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Markdown Admonitions</h1>
+<p>Valaxy supports GitHub-style admonition syntax, which can be used to highli</p>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/admonitions" target="_blank">https://antfu.wrxinyue.org/posts/admonitions</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (WRXinYue)</author>
+        </item>
+        <item>
+            <title><![CDATA[Art Styles]]></title>
+            <link>https://antfu.wrxinyue.org/posts/art-styles</link>
+            <guid>https://antfu.wrxinyue.org/posts/art-styles</guid>
+            <pubDate>Sun, 16 Mar 2025 16:24:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p>[[toc]]</p>
+<h1>Art Styles{lang=&quot;en&quot;}</h1>
+<p>::: en<br>
+This guide explains the different art styles available in</p>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/art-styles" target="_blank">https://antfu.wrxinyue.org/posts/art-styles</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (WRXinYue)</author>
+        </item>
+        <item>
+            <title><![CDATA[Frontmatter Options]]></title>
+            <link>https://antfu.wrxinyue.org/posts/frontmatter-options</link>
+            <guid>https://antfu.wrxinyue.org/posts/frontmatter-options</guid>
+            <pubDate>Sun, 16 Mar 2025 16:24:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p>[[toc]]</p>
+<h1>Frontmatter Options{lang=&quot;en&quot;}</h1>
+<p>::: en<br>
+This guide explains the various frontmatter optio</p>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/frontmatter-options" target="_blank">https://antfu.wrxinyue.org/posts/frontmatter-options</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (WRXinYue)</author>
+        </item>
+        <item>
+            <title><![CDATA[Install]]></title>
+            <link>https://antfu.wrxinyue.org/posts/install</link>
+            <guid>https://antfu.wrxinyue.org/posts/install</guid>
+            <pubDate>Sun, 16 Mar 2025 16:24:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p>::: zh-CN<br>
+对于第一次尝试的valaxy的用户，可以在本篇文章会如何安装 <code>valaxy-theme-antfu</code> 主题。在此之前，建议先了解一下[valaxy](<a href="https://valax">https://valax</a></p>
+<br/><p>访问 <a href="https://antfu.wrxinyue.org/posts/install" target="_blank">https://antfu.wrxinyue.org/posts/install</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (WRXinYue)</author>
+        </item>
+    </channel>
+</rss>
