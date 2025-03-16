@@ -11,10 +11,6 @@ lang: en
 top: 100
 ---
 
-[![npm](https://img.shields.io/npm/v/valaxy-theme-antfu?color=000)](https://www.npmjs.com/package/valaxy-theme-antfu)
-[![valaxy](https://img.shields.io/npm/dependency-version/valaxy-theme-antfu/dev/valaxy?color=9333ea)](https://github.com/YunYouJun/valaxy)
-[![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
-
 ::: zh-CN
 对于第一次尝试的valaxy的用户，可以在本篇文章会如何安装 `valaxy-theme-antfu` 主题。在此之前，建议先了解一下[valaxy](https://valaxy.site/)
 :::
@@ -22,6 +18,17 @@ top: 100
 ::: en
 For users trying Valaxy for the first time, this article will guide you on how to install the valaxy-theme-antfu theme. Before proceeding, it is recommended to familiarize yourself with [valaxy](https://valaxy.site/).
 :::
+
+<div class="flex justify-center items-center gap-2 flex-wrap my-6">
+
+<a href="https://www.npmjs.com/package/valaxy-theme-antfu">
+  <img src="https://img.shields.io/npm/v/valaxy-theme-antfu?label=valaxy-theme-antfu&color=000" alt="npm">
+</a>
+<a href="https://github.com/YunYouJun/valaxy">
+  <img src="https://img.shields.io/npm/dependency-version/valaxy-theme-antfu/dev/valaxy?color=9333ea" alt="valaxy">
+</a>
+
+</div>
 
 ### 兼容性{lang="zh-CN"}
 
@@ -83,16 +90,6 @@ yarn create valaxy
 
 :::
 
-::: zh-CN
-::: details 你能看到以下的输出
-<CreateValaxyTooltip />
-:::
-
-::: en
-::: details You will be greeted with a few simple questions.
-<CreateValaxyTooltip />
-:::
-
 ### 安装主题{lang="zh-CN"}
 
 ### Install theme{lang="en"}
@@ -129,13 +126,15 @@ yarn add valaxy-theme-antfu
 
 > [!NOTE]
 > 如果您在创建的过程中遇到困难，强烈建议先看[Valaxy文档](https://valaxy.site/guide/getting-started)
-> :::
+
+:::
 
 ::: en
 
 > [!NOTE]
 > If you encounter difficulties during the creation process, it is highly recommended to first check the [Valaxy documentation.](https://valaxy.site/guide/getting-started)
-> :::
+
+:::
 
 ### 启用主题{lang="zh-CN"}
 
@@ -168,7 +167,8 @@ export default defineValaxyConfig<ThemeUserConfig>({
 > TypeScript 是 JavaScript 的一个超集，添加了类型系统和对 ES6+ 的支持。它不仅能让开发者在编码阶段就能发现潜在的错误，还能提高代码的可读性和可维护性
 >
 > 简单来说，TypeScript 可以在您编辑配置文件时自动完成代码提示，并且如果配置不正确，它会立即用红色警告提示您，以便您及时修正错误
-> :::
+
+::
 
 ::: en
 
@@ -176,7 +176,8 @@ export default defineValaxyConfig<ThemeUserConfig>({
 > TypeScript is a superset of JavaScript that adds a type system and support for ES6+. It not only allows developers to identify potential errors during the coding phase but also improves code readability and maintainability.
 >
 > In simple terms, TypeScript can automatically complete code suggestions while you are editing configuration files, and if the configuration is incorrect, it will immediately alert you with a red warning so that you can correct errors promptly.
-> :::
+
+:::
 
 :::zh-CN
 
@@ -205,13 +206,15 @@ export default defineValaxyConfig<ThemeUserConfig>({
 
 > [!WARNING]
 > 请确保您已经正确地导入了所有必要的类型。如果导入的类型不正确，可能会导致构建失败
-> :::
+
+:::
 
 :::en
 
 > [!WARNING]
 > Please ensure that you have correctly imported all the necessary types. Incorrectly imported types may cause the build to fail.
-> :::
+
+:::
 
 :::zh-CN
 
