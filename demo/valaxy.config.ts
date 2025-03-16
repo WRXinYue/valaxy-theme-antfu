@@ -1,10 +1,4 @@
 import type { ThemeConfig } from 'valaxy-theme-antfu'
-import Shiki from '@shikijs/markdown-it'
-import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
-import MarkdownItGitHubAlerts from 'markdown-it-github-alerts'
-// @ts-expect-error missing types
-import LinkAttributes from 'markdown-it-link-attributes'
-import MarkdownItMagicLink from 'markdown-it-magic-link'
 import { defineConfig } from 'valaxy'
 
 /**
@@ -19,30 +13,27 @@ export default defineConfig<ThemeConfig>({
       {
         text: 'Home',
         link: '/',
+        icon: 'i-ri-home-line',
       },
       {
-        text: 'Blog',
-        link: '/posts',
+        text: 'Docs',
+        link: '/docs',
         icon: 'i-ri-article-line',
-      },
-      {
-        text: 'Projects',
-        link: '/projects',
-        icon: 'i-ri-lightbulb-line',
       },
       {
         text: 'Talks',
         link: '/talks',
+        icon: 'i-ri-lightbulb-line',
       },
       {
-        title: 'Sponsors',
-        link: '/sponsors-list',
+        text: 'Features',
+        link: '/features',
+        icon: 'i-ri-star-line',
+      },
+      {
+        title: 'Collective Sponsor',
+        link: '/collective-sponsor-onetime',
         icon: 'i-ri-heart-line',
-      },
-      {
-        title: 'Podcasts',
-        link: '/podcasts',
-        icon: 'i-ri-mic-line',
       },
       {
         title: 'Demos',
@@ -51,101 +42,33 @@ export default defineConfig<ThemeConfig>({
       },
       {
         title: 'GitHub',
-        link: 'https://github.com/antfu',
+        link: 'https://github.com/wrxinyue/valaxy-theme-antfu',
         icon: 'i-ri-github-fill',
       },
       {
         title: 'RSS',
-        link: '/feed.xml',
+        link: 'https://antfu.wrxinyue.org/feed.xml',
         icon: 'i-la-rss-square',
       },
     ],
 
+    navControls: {
+      localeToggle: true,
+    },
+
     subNav: [
       {
-        text: 'Blog',
-        link: '/posts',
+        text: 'Documentation',
+        link: '/docs',
       },
       {
         text: 'Talks',
         link: '/talks',
       },
-      {
-        text: 'Documentation',
-        link: '/docs',
-      },
     ],
 
     footer: {
       since: 2024,
-    },
-  },
-
-  markdown: {
-    config: async (md) => {
-      md.use(await Shiki({
-        themes: {
-          dark: 'vitesse-dark',
-          light: 'vitesse-light',
-        },
-        defaultColor: false,
-        cssVariablePrefix: '--s-',
-        transformers: [
-          transformerTwoslash({
-            explicitTrigger: true,
-            renderer: rendererRich(),
-          }),
-        ],
-      }))
-
-      md.use(LinkAttributes, {
-        matcher: (link: string) => /^https?:\/\//.test(link),
-        attrs: {
-          target: '_blank',
-          rel: 'noopener',
-        },
-      })
-
-      md.use(MarkdownItGitHubAlerts)
-
-      md.use(MarkdownItMagicLink, {
-        linksMap: {
-          'NuxtLabs': 'https://nuxtlabs.com',
-          'Vitest': 'https://github.com/vitest-dev/vitest',
-          'Slidev': 'https://github.com/slidevjs/slidev',
-          'VueUse': 'https://github.com/vueuse/vueuse',
-          'UnoCSS': 'https://github.com/unocss/unocss',
-          'Elk': 'https://github.com/elk-zone/elk',
-          'Type Challenges': 'https://github.com/type-challenges/type-challenges',
-          'Vue': 'https://github.com/vuejs/core',
-          'Nuxt': 'https://github.com/nuxt/nuxt',
-          'Vite': 'https://github.com/vitejs/vite',
-          'Shiki': 'https://github.com/shikijs/shiki',
-          'Twoslash': 'https://github.com/twoslashes/twoslash',
-          'ESLint Stylistic': 'https://github.com/eslint-stylistic/eslint-stylistic',
-          'Unplugin': 'https://github.com/unplugin',
-          'Nuxt DevTools': 'https://github.com/nuxt/devtools',
-          'Vite PWA': 'https://github.com/vite-pwa',
-          'i18n Ally': 'https://github.com/lokalise/i18n-ally',
-          'ESLint': 'https://github.com/eslint/eslint',
-          'Astro': 'https://github.com/withastro/astro',
-          'TwoSlash': 'https://github.com/twoslashes/twoslash',
-          'Anthony Fu Collective': { link: 'https://opencollective.com/antfu', imageUrl: 'https://github.com/antfu-collective.png' },
-          'Netlify': { link: 'https://netlify.com', imageUrl: 'https://github.com/netlify.png' },
-          'Stackblitz': { link: 'https://stackblitz.com', imageUrl: 'https://github.com/stackblitz.png' },
-          'Vercel': { link: 'https://vercel.com', imageUrl: 'https://github.com/vercel.png' },
-        },
-        imageOverrides: [
-          ['https://github.com/vuejs/core', 'https://vuejs.org/logo.svg'],
-          ['https://github.com/nuxt/nuxt', 'https://nuxt.com/assets/design-kit/icon-green.svg'],
-          ['https://github.com/vitejs/vite', 'https://vitejs.dev/logo.svg'],
-          ['https://github.com/sponsors', 'https://github.com/github.png'],
-          ['https://github.com/sponsors/antfu', 'https://github.com/github.png'],
-          ['https://nuxtlabs.com', 'https://github.com/nuxtlabs.png'],
-          [/opencollective\.com\/vite/, 'https://github.com/vitejs.png'],
-          [/opencollective\.com\/elk/, 'https://github.com/elk-zone.png'],
-        ],
-      })
     },
   },
 })

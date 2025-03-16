@@ -18,6 +18,77 @@ export interface ThemeConfig extends DefaultTheme.Config {
   }
 
   /**
+   * Logo configuration
+   */
+  logo?: {
+    /**
+     * Whether to show the logo
+     * @default true
+     */
+    enable?: boolean
+
+    /**
+     * Component name to use as logo
+     * @default 'Logo'
+     */
+    component?: string
+
+    /**
+     * Image URL to use as logo
+     */
+    image?: string
+
+    /**
+     * SVG content to use as logo
+     */
+    svg?: string
+  }
+
+  /**
+   * English Only feature configuration
+   */
+  englishOnly?: {
+    /**
+     * Whether to enable the English Only toggle feature
+     * @default true
+     */
+    enable: boolean
+
+    /**
+     * Default value for English Only mode
+     * @default false
+     */
+    default: boolean
+  }
+
+  /**
+   * navbar
+   */
+  nav: NavItem[]
+
+  /**
+   * Navigation bar controls configuration
+   */
+  navControls?: {
+    /**
+     * Whether to enable the locale toggle in navigation bar
+     * @default true
+     */
+    localeToggle?: boolean
+
+    /**
+     * Whether to enable the theme toggle in navigation bar
+     * @default true
+     */
+    themeToggle?: boolean
+  }
+
+  subNav: {
+    text?: string
+    link: string
+  }[]
+
+  /**
    * footer
    */
   footer: Partial<{
@@ -59,16 +130,6 @@ export interface ThemeConfig extends DefaultTheme.Config {
       icp: string
     }
   }>
-
-  /**
-   * navbar
-   */
-  nav: NavItem[]
-
-  subNav: {
-    text?: string
-    link: string
-  }[]
 }
 
 export interface NavItem {

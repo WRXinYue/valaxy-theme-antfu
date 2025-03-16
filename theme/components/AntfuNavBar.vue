@@ -12,16 +12,22 @@ function toTop() {
 }
 
 const { y: scroll } = useWindowScroll()
+
+// Get logo configuration from themeConfig with defaults
+const logoConfig = themeConfig.value.logo || { enable: true, component: 'Logo' }
 </script>
 
 <template>
   <header class="header z-40">
     <RouterLink
+      v-if="logoConfig.enable"
       class="absolute select-none m-5 h-12 w-12 outline-none xl:fixed"
       to="/"
       focusable="false"
     >
-      <Logo />
+      <component :is="logoConfig.component" v-if="logoConfig.component && !logoConfig.image && !logoConfig.svg" />
+      <img v-else-if="logoConfig.image" :src="logoConfig.image" alt="Logo">
+      <div v-else-if="logoConfig.svg" v-html="logoConfig.svg" />
     </RouterLink>
     <button
       title="Scroll to top"
@@ -39,8 +45,8 @@ const { y: scroll } = useWindowScroll()
           <span class="lt-md:hidden">{{ nav.text }}</span>
           <div v-if="nav.icon" :class="[nav.icon, !nav.title && 'md:hidden']" />
         </AppLink>
-        <ToggleLocale />
-        <ToggleTheme />
+        <AntfuToggleLocale />
+        <AntfuToggleTheme />
       </div>
     </nav>
   </header>

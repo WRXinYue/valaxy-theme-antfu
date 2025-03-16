@@ -8,10 +8,13 @@
   background-color: #0e0e0e;
 }
 
+html:not(.dark) .shiki {
+  background-color: #fafafa;
+}
+
 html:not(.dark) .shiki,
 html:not(.dark) .shiki span {
   color: var(--s-light, inherit);
-  background-color: #fafafa;
   --twoslash-popup-bg: #fafafa;
 }
 
@@ -58,11 +61,12 @@ html:not(.dark) .shiki span {
 }
 
 .prose {
+  --fg-light: #888;
   --fg: #555;
   --fg-deep: #222;
   --fg-deeper: #000;
 
-  color: var(--fg) !important;
+  color: var(--fg);
 }
 
 .prose a {
@@ -86,6 +90,7 @@ html:not(.dark) .shiki span {
 }
 
 html.dark .prose {
+  --fg-light: #888;
   --fg: #bbb;
   --fg-deep: #ddd;
   --fg-deeper: #fff;
@@ -161,6 +166,16 @@ h6:focus .header-anchor {
   content: none;
 }
 
+.prose s {
+  opacity: 0.5;
+}
+
+.prose em {
+  --uno: font-serif;
+  color: var(--fg-deep);
+  font-size: 1.05em;
+}
+
 .table-of-contents {
   position: fixed;
   top: 90px;
@@ -173,8 +188,7 @@ h6:focus .header-anchor {
 }
 
 .table-of-contents-anchor {
-  --uno: mx2 w-7 h-7 text-lg flex items-center justify-center bg-base rounded text-hex-8887 border border-base shadow
-    md: border-transparent md: shadow-none transition duration-400;
+  --uno: 'mx2 w-7 h-7 text-lg flex items-center justify-center bg-base rounded text-hex-8887 border border-base shadow md:border-transparent md:shadow-none transition duration-400';
 }
 
 .table-of-contents > ul {
@@ -249,4 +263,26 @@ h6:focus .header-anchor {
   height: 1.6em;
   width: 1.6em;
   border-radius: 50%;
+}
+
+/* Shiki Transformers */
+.prose code .highlighted {
+  background-color: #8881;
+  width: calc(100% + 48px);
+  display: inline-block;
+  transition: background-color 0.5s;
+  margin: 0px -24px;
+  padding: 0px 24px;
+}
+
+.prose .shiki.has-highlighted .line:not(.highlighted) {
+  opacity: 0.75;
+}
+
+.prose .highlighted-word {
+  background-color: #8881;
+  border: 1px solid #8885;
+  padding: 1px 3px;
+  margin: -1px -3px;
+  border-radius: 4px;
 }

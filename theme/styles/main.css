@@ -1,16 +1,4 @@
-@use 'valaxy/client/styles/mixins/index.scss' as *;
-@use './layout' as *;
-@use './markdown' as *;
-@use './prose' as *;
-
-/* 1.1.general-setting-pages *************************/
-/****************************************************/
 :root {
-  --pr-color: #fff;
-  --second-color: #050505;
-  --cubicbz: cubic-bezier(0.9 0 0.1 1);
-  --fz-big: 60px;
-  --st-c-footer-height: 90px;
   --c-bg: #fff;
   --c-scrollbar: #eee;
   --c-scrollbar-hover: #bbb;
@@ -48,13 +36,6 @@ html.dark {
 }
 
 * {
-  box-sizing: border-box;
-  font-family: Syne sans-serif;
-  font-weight: 800;
-  margin: 0;
-  padding: 0;
-  font-feature-settings: pnum on lnum on;
-  border-style: none;
   scrollbar-color: var(--c-scrollbar) var(--c-bg);
 }
 
@@ -212,14 +193,14 @@ html:not(.dark) [img-dark] {
 /* Overrides Floating Vue */
 .v-popper--theme-dropdown .v-popper__inner,
 .v-popper--theme-tooltip .v-popper__inner {
-  --at-apply: bg-base text-base rounded border border-base shadow;
+  --at-apply: bg-base color-base text-base rounded border border-base shadow;
   box-shadow: 0 6px 30px #0000001a;
 }
 
 .v-popper--theme-tooltip .v-popper__arrow-inner,
 .v-popper--theme-dropdown .v-popper__arrow-inner {
   visibility: visible;
-  --at-apply: border-white dark: border-black;
+  --at-apply: border-white dark-border-black;
 }
 
 .v-popper--theme-tooltip .v-popper__arrow-outer,

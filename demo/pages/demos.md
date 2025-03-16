@@ -1,11 +1,11 @@
 ---
-title: Demos - Anthony Fu
-display: Demos
-subtitle: Demonstrations for projects I am working on from Tweets
-description: Demonstrations for projects I am working on from Tweets
+title: Theme Components
+display: Components
+subtitle: Interactive demonstrations of theme components and features
+description: Interactive demonstrations of Valaxy Antfu Theme components and features
 art: dots
 ---
 
 <!-- @layout-full-width -->
 
-<ListDemos />
+<AntfuListDemos />

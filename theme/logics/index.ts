@@ -1,11 +1,10 @@
-import { useDark, useStorage } from '@vueuse/core'
+import { useDark } from '@vueuse/core'
 import { format, isThisYear, parseISO } from 'date-fns'
 import { enUS, zhCN } from 'date-fns/locale'
 import { nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 export const isDark = useDark()
-export const englishOnly = useStorage('antfu-english-only', false)
 
 /**
  * Credit to [@hooray](https://github.com/hooray)
@@ -27,7 +26,6 @@ export function toggleDark(event: MouseEvent) {
     Math.max(x, innerWidth - x),
     Math.max(y, innerHeight - y),
   )
-  // @ts-expect-error: Transition API
   const transition = document.startViewTransition(async () => {
     isDark.value = !isDark.value
     await nextTick()

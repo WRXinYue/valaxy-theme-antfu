@@ -1,6 +1,6 @@
 ---
-title: Talks - Anthony Fu
-display: ''
+title: Theme Examples
+display: 'Examples'
 art: plum
 ---
 
@@ -8,23 +8,21 @@ art: plum
 
 <div pt-5 />
 
-# Talk Schedule 2024
+# Theme Showcase
 
-| Date                               | Conference                                                                                           | Location             | Topic                                                                               |
-| ---------------------------------- | ---------------------------------------------------------------------------------------------------- | -------------------- | ----------------------------------------------------------------------------------- |
-| <AntfuTalkDate date="2024-02-27"/> | [**The Vue-niverse meetup**](https://www.meetup.com/nl-NL/coven-of-wisdom-utrecht/events/298711260/) | Utrecht, Netherlands | The Progressive Path                                                                |
-| <AntfuTalkDate date="2024-02-29"/> | [**Vue Amsterdam**](https://vuejs.amsterdam/)                                                        | Amsterdam            | [The Progressive Path](https://antfu.me/posts/roads-to-oss-progressive-vueams-2024) |
-| <AntfuTalkDate date="2024-03-01"/> | [**Devworld**](https://devworldconference.com/)                                                      | Amsterdam            | Panel Discussions                                                                   |
-| <AntfuTalkDate date="2024-03-22"/> | [**React Paris**](https://react.paris/)                                                              | Paris                | The Set Theory                                                                      |
-| <AntfuTalkDate date="2024-04-03"/> | [**Vue.js Paris**](https://www.meetup.com/fr-FR/vuejs-paris/)                                        | Paris                | Panel Discussions                                                                   |
-| <AntfuTalkDate date="2024-06-01"/> | [**Frontend Nation**](https://frontendnation.com/)                                                   | Online; Free         | The Progressive Path                                                                |
-| <AntfuTalkDate date="2024-06-08"/> | [**CityJS Athens**](https://greece.cityjsconf.org/)                                                  | Athens               | ESLint One for All Made Easy                                                        |
-| <AntfuTalkDate date="2024-06-13"/> | [**JS Nation**](https://jsnation.com/)                                                               | Amsterdam            | ESLint One for All Made Easy                                                        |
-| <AntfuTalkDate date="2024-06-14"/> | [**React Summit**](https://reactsummit.com/)                                                         | Amsterdam            | The Set Theory                                                                      |
-| <AntfuTalkDate date="2024-07-06"/> | [**VueConf Shenzhen**](https://vue.w3ctech.com/)                                                     | Shenzhen, China      | Yak Shaving                                                                         |
-| <AntfuTalkDate date="2024-10-19"/> | [**Vue Fes Japan**](https://vuefes.jp/)                                                              | Tokyo                | Yak Shaving                                                                         |
-| <AntfuTalkDate date="2024-12-13"/> | [**React Day Berlin**](https://reactday.berlin/)                                                     | Berlin               | TBD                                                                                 |
+| Site                                                              | Type           | Description                                                      |
+| ----------------------------------------------------------------- | -------------- | ---------------------------------------------------------------- |
+| [**Demo Site**](https://valaxy-theme-antfu.netlify.app)           | Demo           | Official demo site showcasing all theme features                 |
+| [**Developer Blog**](https://valaxy-theme-antfu.netlify.app)      | Personal Blog  | Perfect for developers sharing code snippets and technical posts |
+| [**Documentation**](https://valaxy-theme-antfu.netlify.app/docs)  | Documentation  | Ideal for project documentation with code examples               |
+| [**Portfolio**](https://valaxy-theme-antfu.netlify.app)           | Portfolio      | Showcase your projects and work experience                       |
+| [**Technical Writing**](https://valaxy-theme-antfu.netlify.app)   | Blog           | For in-depth technical articles and tutorials                    |
+| [**Open Source Project**](https://valaxy-theme-antfu.netlify.app) | Project Site   | Highlight your open source project features and documentation    |
+| [**Digital Garden**](https://valaxy-theme-antfu.netlify.app)      | Knowledge Base | Organize your notes and thoughts in a connected knowledge base   |
+| [**Company Tech Blog**](https://valaxy-theme-antfu.netlify.app)   | Corporate      | Professional blog for tech companies to share insights           |
+| [**Conference Site**](https://valaxy-theme-antfu.netlify.app)     | Event          | Showcase speakers, schedule and event information                |
+| [**Course Materials**](https://valaxy-theme-antfu.netlify.app)    | Education      | Share course materials, tutorials and learning resources         |
 
-<h1 important="mb--4 mt-15">Latest Talks</h1>
+<h1 important="mb--4 mt-15">Example Sites</h1>
 
-<AntfuListPosts type="talk" :extra="frontmatter.items" />
+<AntfuListPosts type="example" :extra="frontmatter.items" />

@@ -3,7 +3,8 @@ import type { Post } from 'valaxy'
 import { usePostList } from 'valaxy'
 // import { useRouter } from 'vue-router'
 import { computed } from 'vue'
-import { englishOnly, formatDate } from '../logics'
+import { useEnglishOnly, useThemeConfig } from '../composables'
+import { formatDate } from '../logics'
 
 const props = defineProps<{
   type?: string
@@ -30,6 +31,13 @@ const props = defineProps<{
 // const routes = usePostList({ type: props.type || '' })
 const routes = usePostList({ type: props.type })
 
+// Get theme configuration
+const themeConfig = useThemeConfig()
+// Get englishOnly state from composable
+const { englishOnly } = useEnglishOnly()
+// Check if English Only feature is enabled in the theme configuration
+const isEnglishOnlyEnabled = themeConfig.value.englishOnly?.enable ?? true
+
 // const posts = computed(() => props.posts || routes.value)
 
 const posts = computed(() =>
@@ -39,7 +47,8 @@ const posts = computed(() =>
       const dateB = typeof b.date === 'string' || typeof b.date === 'number' ? new Date(b.date) : new Date()
       return +dateB - +dateA
     })
-    .filter(i => !englishOnly.value || i.lang !== 'zh'),
+    // Only filter by language if English Only is enabled and checked
+    .filter(i => !isEnglishOnlyEnabled || !englishOnly.value || i.lang !== 'zh'),
 )
 
 const getYear = (a: Date | string | number) => new Date(a).getFullYear()

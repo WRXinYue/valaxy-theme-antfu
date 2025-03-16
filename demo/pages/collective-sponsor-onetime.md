@@ -1,6 +1,6 @@
 ---
-title: Collective Sponsorship
-display: ''
+title: Theme Contribution
+display: 'Contribute'
 ---
 
 <script setup>
@@ -15,47 +15,40 @@ const month = computed(() => monthes[+route.query.month - 1])
 </script>
 
 <h1 class="flex gap-2 items-center">
-👋 Hello
-<img :src="`https://github.com/${route.query.github}.png`" class="!h-12 !w-12 rounded-full !m0" />
-{{route.query.name}}!
+👋 Hello Contributors!
 </h1>
 
-This is {@antfu|Anthony Fu}
+<div class="prose m-auto mb-8 mt-6">
+  <p>
+    Thank you for your interest in contributing to the Valaxy Antfu Theme! This theme is an open-source project that welcomes contributions from the community.
+  </p>
 
-I'd like to represent our ecosystem to say **THANK YOU** for your open source work!
+  <h2>Ways to Contribute</h2>
 
-To show our appreciation,<br>**we'd like to offer you a one-time sponsorship of <span>${{route.query.amount}}</span> from our [Open Collective](https://opencollective.com/antfu)**.
+  <ul>
+    <li><strong>Report Bugs</strong>: If you find a bug, please report it on our GitHub issues page.</li>
+    <li><strong>Suggest Features</strong>: Have an idea for a new feature? Let us know!</li>
+    <li><strong>Submit Pull Requests</strong>: Code contributions are always welcome.</li>
+    <li><strong>Improve Documentation</strong>: Help us make our documentation better.</li>
+    <li><strong>Share Your Site</strong>: Built something with this theme? Share it with us!</li>
+  </ul>
 
-You can learn more about the context in this post: [Initiative on Sponsorship Forwarding](https://antfu.me/posts/sponsorship-forwarding).
+  <h2>Development Setup</h2>
 
----
+  <p>
+    To contribute to the theme development, follow these steps:
+  </p>
 
-As our funds are in Open Collective, it would require a bit manual work on your side to claim the sponsorship (sorry for the inconvenience, we are consistently evaluating the approaches and trying find a better way).
+  <ol>
+    <li>Fork the repository on GitHub</li>
+    <li>Clone your fork locally</li>
+    <li>Install dependencies with <code>npm install</code></li>
+    <li>Start the development server with <code>npm run dev</code></li>
+    <li>Make your changes</li>
+    <li>Submit a pull request</li>
+  </ol>
+</div>
 
-There are two ways you can do that:
-
-## A. Sumbit expense on Open Collective
-
-Create an expense on our Open Collective, it usually take a few seconds to fill the form. You will receive the payment directly to your bank account or PayPal within a few days after approval.
-
-1. Got to https://opencollective.com/antfu/expenses/new, select "Invoice"
-2. Fill in your payment information
-3. For expense title, put <TextCopy inline font-bold :slice="[1, -1]">"One-time Sponsorship, {{month}} {{route.query.year}}"</TextCopy>
-4. For the description field, put <TextCopy inline font-bold :slice="[1, -1]">"One-time sponsorship"</TextCopy> with **a link to your recent work** in the description, and fill in the amount **${{route.query.amount}}**.
-5. Click "Next" and then "Submit Expense"
-
-That's it! Feel free to reach out to me if you have any questions.
-
-## B. Create your own Collective
-
-An alternate solution is to create your own Collective on Open Collective so we could directly sponsor you to your collective without the need of submitting an expense on your side. This way you also can manage your own funds and expenses as wish.
-
-You fiscal host has to be in [Open Source Collective](https://opencollective.com/opensource) for us to forward the sponsorship.
-
-Also note that if you are trying to apply for one, it usually requires to link to an open source projects that are under an GitHub organization but not the personal namespace. Send me your open collective link once you have it and we will do the sponsorship.
-
----
-
-We will do this sponsorship on a monthly basis, with a post each month to announce the sponsorships and introducing the contributors and their work. For example, like [this one we had for April 2024](https://opencollective.com/antfu/updates/anthony-collective-redistribution-april-2024). If you have anything you'd like us to mention in the post, feel free to let us know!
-
-Thank you again for your amazing work and contributions to open source! 🙏 💖
+<div class="text-center mt-8">
+  <a href="https://github.com/WRXinYue/valaxy-theme-antfu" target="_blank" class="btn">View on GitHub</a>
+</div>

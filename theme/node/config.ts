@@ -12,6 +12,21 @@ export const defaultThemeConfig: ThemeConfig = {
     primary: '#0078E7',
   },
 
+  logo: {
+    enable: true,
+    component: 'Logo',
+  },
+
+  englishOnly: {
+    enable: false,
+    default: false,
+  },
+
+  navControls: {
+    localeToggle: false,
+    themeToggle: true,
+  },
+
   footer: {
     since: 2022,
     icon: {

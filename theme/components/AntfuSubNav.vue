@@ -1,18 +1,29 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import { useThemeConfig } from '../composables'
-import { englishOnly } from '../logics'
+import { useEnglishOnly, useThemeConfig } from '../composables'
 
 const inactiveStyle = 'opacity-20 hover:opacity-50'
 const activeStyle = 'opacity-100 underline'
 
 const route = useRoute()
 const themeConfig = useThemeConfig()
+const { englishOnly } = useEnglishOnly()
+
+// Check if English Only feature is enabled in the theme configuration
+const isEnglishOnlyEnabled = themeConfig.value.englishOnly?.enable ?? true
 </script>
 
 <template>
   <div class="m-auto select-none prose mb-8 animate-none! op100!">
-    <button flex="~ gap1" items-center text-sm op30 mb2 @click="englishOnly = !englishOnly">
+    <button
+      v-if="isEnglishOnlyEnabled"
+      flex="~ gap1"
+      items-center
+      text-sm
+      op30
+      mb2
+      @click="englishOnly = !englishOnly"
+    >
       <div :i="englishOnly ? 'carbon-checkbox-checked' : 'carbon-checkbox'" />
       English Only
     </button>
